@@ -1,0 +1,94 @@
+nav {
+  padding: 12px 30px;
+  position: fixed;
+  top: -4px;
+  width: 100%;
+  z-index: 999;
+  transition: background-color 0.3s ease;
+}
+
+nav.scrolled {
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 5px 8px 0px;
+}
+.nav_left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+/* .ant-menu {
+  background: transparent;
+}
+::ng-deep.ant-menu-title-content {
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  line-height: 2;
+}
+.ant-menu-horizontal {
+  line-height: 38px;
+  border: 0;
+  border-bottom: 0;
+  box-shadow: none;
+}
+.anticon {
+  margin-bottom: 5px;
+}
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu {
+  padding: 0 12px;
+}
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected {
+  color: #000;
+}
+::ng-deep.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover::after,
+::ng-deep.ant-menu-horizontal:not(.ant-menu-dark)
+  > .ant-menu-submenu:hover::after,
+::ng-deep.ant-menu-horizontal:not(.ant-menu-dark)
+  > .ant-menu-item-active::after,
+::ng-deep.ant-menu-horizontal:not(.ant-menu-dark)
+  > .ant-menu-submenu-active::after,
+::ng-deep.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open::after,
+::ng-deep.ant-menu-horizontal:not(.ant-menu-dark)
+  > .ant-menu-submenu-open::after,
+::ng-deep.ant-menu-horizontal:not(.ant-menu-dark)
+  > .ant-menu-item-selected::after,
+::ng-deep.ant-menu-horizontal:not(.ant-menu-dark)
+  > .ant-menu-submenu-selected::after {
+  border-bottom: 2px solid #000;
+}
+::ng-deep.ant-menu-title-content {
+  font-weight: 600;
+} */
+.nav_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav_right span {
+  font-size: 22px;
+  color: #000;
+}
+.ant-divider-vertical {
+  height: 0.9em;
+  margin: 0 12px;
+  border-left: 1px solid #b3b1b1e5;
+}
+
+::ng-deep.ant-badge-dot {
+  z-index: auto;
+  width: 6px;
+  min-width: 6px;
+  height: 6px;
+  background: #ff4d4f;
+  border-radius: 100%;
+  box-shadow: none;
+}

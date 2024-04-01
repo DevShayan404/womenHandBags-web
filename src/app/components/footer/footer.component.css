@@ -1,0 +1,101 @@
+.footer_section {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 40px 20px 40px;
+}
+.footer_paragraph h1 {
+  color: #fff;
+  font-size: 32px;
+}
+.footer_paragraph p {
+  text-align: justify;
+  color: #ffffff85;
+}
+.footer_paragraph .footer_payment_card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer_paragraph .footer_payment_card img {
+  width: 60px;
+  height: auto;
+}
+.footer_links ul {
+  list-style: none;
+  margin: 10px 0;
+}
+.footer_links ul li {
+  color: #ffffff85;
+  cursor: pointer;
+  padding: 0 0 2px 0;
+}
+.footer_links ul li:hover {
+  text-decoration: underline;
+}
+.footer_newsletter_input {
+  margin-top: 10px;
+  border-radius: 0.2rem;
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.footer_newsletter_input input {
+  border: none;
+  width: 70%;
+  padding: 8px 10px;
+  outline: none;
+  color: #000;
+  background-color: transparent;
+}
+.footer_newsletter_input button {
+  background: #988965;
+  border: none;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 0.2rem;
+  font-weight: 600;
+  width: 30%;
+  margin-right: 2px;
+}
+.footer_newsletter ul {
+  list-style: none;
+  margin: 20px 0 0 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.footer_newsletter ul li span {
+  font-size: 22px;
+  cursor: pointer;
+  color: #ffffff85;
+  transition: 0.2s linear;
+}
+.footer_newsletter ul li span:hover {
+  color: #fff;
+}
+.footer_copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff85;
+}
+.footer_section hr {
+  border-radius: 5rem;
+  background: #ffffff4d;
+  border-width: 0;
+  margin: 14px 0;
+  height: 1px;
+}
+.ant-divider-vertical {
+  position: relative;
+  top: -0.06em;
+  display: inline-block;
+  height: 1.5em;
+  margin: 0 8px;
+  vertical-align: middle;
+  border-top: 0;
+  border-left: 2px solid #ffffff85;
+}

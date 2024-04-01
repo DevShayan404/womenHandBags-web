@@ -1,0 +1,190 @@
+<!-- ---------------------------------------------------------- -->
+<section class="banner_section">
+  <div class="banner_img">
+    <div
+      nz-row
+      nzAlign="middle"
+      style="height: 90vh; background-color: rgba(0, 0, 0, 0.1)"
+    >
+      <div nz-col nzSpan="11"></div>
+      <div nz-col nzSpan="10">
+        <div class="banner_left_content">
+          <h1>
+            Women
+            <span>*</span>
+            <!-- <hr /> -->
+          </h1>
+          <strong>Hand Bags </strong>
+          <p>
+            Divine Carry inivites you to an exclusive world when where
+            sophistication intertwines seamlessly with style, offering a curated
+            collection that speaks volumes about elegance and innovation,
+            setting the stage for your uniques fashion narrative.
+          </p>
+          <button>
+            SHOP NEW COLLECTION
+            <span nz-icon nzType="arrow-right" nzTheme="outline"></span>
+          </button>
+
+          <!-- <div class="counter">
+    
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ---------------------------------------------------------- -->
+<section class="collection_section">
+  <div nz-row [nzGutter]="16">
+    <div nz-col nzSpan="24">
+      <!-- <nz-divider nzText="SHOP BY CATEGORY"></nz-divider> -->
+    </div>
+    <div
+      nz-col
+      nzSpan="6"
+      class="gutter-row collection_img"
+      *ngFor="let list of collection"
+    >
+      <div>
+        <img [src]="list?.src" />
+        <h1>{{ list?.collectionName }}</h1>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ---------------------------------------------------------- -->
+<section class="product_section">
+  <div nz-row nzJustify="center">
+    <div nz-col nzSpan="23">
+      <ul>
+        <li
+          *ngFor="let tab of productTabs; let i = index"
+          [class.product_tab_active]="activeTabIndex === i"
+          (click)="setActiveTab(i)"
+        >
+          {{ tab?.productTabName }}
+          <hr *ngIf="activeTabIndex === i" />
+        </li>
+      </ul>
+
+      <div class="card_container">
+        <div class="card_wrapper" *ngFor="let list of cardList">
+          <!-- <nz-ribbon
+            *ngIf="list.badge !== null"
+            [nzText]="list.badge"
+            nzColor="volcano"
+          >
+            <nz-card nzSize="small" nzHoverable>
+              <div class="list_card_img">
+                <img [src]="list.src" alt="" />
+                <button>Add to Cart</button>
+              </div>
+              <div class="list_card_content">
+                <strong>{{ list.name }}</strong>
+                <span>{{ list.currency }}. {{ list.price }}</span>
+              </div>
+            </nz-card>
+          </nz-ribbon> -->
+          <nz-card nzSize="small" nzHoverable>
+            <div class="list_card_img">
+              <img [src]="list.src" alt="" />
+              <button>Add to Cart</button>
+            </div>
+            <div class="list_card_content">
+              <strong>{{ list.name }}</strong>
+              <span>{{ list.currency }}. {{ list.price }}</span>
+            </div>
+          </nz-card>
+        </div>
+        <button class="view_all">
+          View All <span nz-icon nzType="arrow-right" nzTheme="outline"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ---------------------------------------------------------- -->
+<section class="deal_section">
+  <div nz-row nzJustify="center">
+    <div nz-col nzSpan="8">
+      <img src="assets/img/dot-shape.jpg" class="shapes_left" />
+      <img src="assets\img\deal1.jpg" alt="" class="deal_img" />
+      <img src="assets/img/dot-shape.jpg" class="shapes_right" />
+    </div>
+    <div nz-col nzSpan="2"></div>
+    <div nz-col nzSpan="10">
+      <div class="deal_content">
+        <h1>
+          Deal of the Month
+          <hr />
+        </h1>
+        <p>
+          Hurry! Don't miss out on our Deal of the Month! Get ready to indulge
+          in incredible savings with our handpicked selection of products. From
+          fashion essentials to must-have gadgets, we've got everything you need
+          to elevate your lifestyle. But act fast - this exclusive offer is only
+          available for a limited time. Shop now and treat yourself to something
+          special!
+        </p>
+
+        <ul>
+          <li>
+            <strong>{{ days }}</strong> <span>Day</span>
+          </li>
+          <li>
+            <strong>{{ hours }}</strong> <span>Hour</span>
+          </li>
+          <li>
+            <strong>{{ minutes }}</strong> <span>Min</span>
+          </li>
+          <li>
+            <strong>{{ seconds }}</strong> <span>Sec</span>
+          </li>
+        </ul>
+
+        <button>
+          Shop Now <span nz-icon nzType="arrow-right" nzTheme="outline"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ---------------------------------------------------------- -->
+<section class="delivery_section">
+  <div nz-row nzJustify="center">
+    <div nz-col nzSpan="20">
+      <ul>
+        <li>
+          <img src="assets\img\delivery.webp" />
+          <div class="delivery_sub_content">
+            <strong>Free Delivery</strong>
+            <p>For all order over PKR 2000</p>
+          </div>
+        </li>
+        <li>
+          <img src="assets\img\return.webp" />
+          <div class="delivery_sub_content">
+            <strong>Return & Exchange</strong>
+            <p>Simply return it within 10 days</p>
+          </div>
+        </li>
+        <li>
+          <img src="assets\img\support.webp" />
+          <div class="delivery_sub_content">
+            <strong>Online Support</strong>
+            <p>Contact us 24/7 hours a day</p>
+          </div>
+        </li>
+        <li>
+          <img src="assets\img\secure-payment.webp" />
+          <div class="delivery_sub_content">
+            <strong>Secure Payment</strong>
+            <p>100% secure payment</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
